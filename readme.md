@@ -1,33 +1,30 @@
-# Advanced Script Template
+# ColdBox with Nuxt
 
-An advanced template with all the bells and whistles in script format
+## Installation
 
-## License
-Apache License, Version 2.0.
+1. `box install`
+2. `box server start`
+3. `cd modules_app/ui`
+4. `npm install`
+5. `npm run build`
 
-## Important Links
+## Usage
 
-Source Code
-- https://github.com/coldbox-templates/advanced-script
+You should be able to visit the ColdBox API at `/api`.
+The UI is mounted at `/`.
+The initial page is using asyncData to hit our own API.
 
-## Quick Installation
+## Dev Flow
 
-Each application templates contains a `box.json` so it can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) for its dependencies.  
-Just go into each template directory and type:
+To take advantage of Nuxt's hot reloading, cd to `/modules_app/ui` and run `npm run dev`.
+The url you must hit in the browser changes to `localhost:3000/modules_app/ui/dist`.
+Hot reloading then works as expected.  You need CORS enabled on the server for the API
+since now there are two servers talking to each other.  The CORS module is included
+as a devDependency for this reason.
 
-```
-box install
-```
+## Possible Improvements
 
-This will setup all the needed dependencies for each application template.  You can then type:
-
-```
-box server start
-```
-
-And run the application.
-
----
- 
-###THE DAILY BREAD
- > "I am the way, and the truth, and the life; no one comes to the Father, but by me (JESUS)" Jn 14:1-12
++ Fix needing the folder path for dev mode.
++ Consolidate `node_modules` in the root.
++ Consolidate config files in the root.
++ Run NPM scripts from the root.
