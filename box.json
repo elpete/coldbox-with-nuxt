@@ -1,0 +1,33 @@
+{
+    "name":"My ColdBox App",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"my-coldbox-app",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^2.7.0",
+        "cors":"^1.4.1"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox",
+        "cors":"modules/cors/"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0"
+    },
+    "scripts":{}
+}
