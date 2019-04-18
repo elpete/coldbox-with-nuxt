@@ -24,10 +24,12 @@
     "installPaths":{
         "coldbox":"coldbox",
         "testbox":"testbox",
-        "cors":"modules/cors/"
+        "cors":"modules/cors/",
+        "route-visualizer":"modules/route-visualizer/"
     },
     "dependencies":{
-        "coldbox":"^5.0.0"
+        "coldbox":"^5.0.0",
+        "route-visualizer":"^1.2.0+4"
     },
     "scripts":{}
 }

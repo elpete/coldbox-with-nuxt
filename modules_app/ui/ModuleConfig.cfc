@@ -45,7 +45,7 @@ component {
 			// Module Entry Point
 			{ pattern="/", handler="home", action="index" },
 			// Convention Route
-			{ pattern="/:handler/:action?" }
+			{ pattern="/:handler/:action?", handler="home", action="index" }
 		];
 
 		// SES Resources
